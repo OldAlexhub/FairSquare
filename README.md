@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🏡 FairSquare — AI-Powered Property Price Predictor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FairSquare is an intelligent real estate price estimation web application that uses machine learning to predict property values based on real-world data scraped from the Egyptian market. It allows users to input property details and receive a fair price estimate, along with a curated list of similar listings.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Features
 
-### `npm start`
+- 📊 **AI-based Price Prediction** using Random Forest and CatBoost
+- 🗺️ **Map Integration** with real location coordinates
+- 💡 **Smart Dropdowns** for Region, Locality, and Type (JSON-controlled)
+- 🖼️ **Visual Suggestions** with cover images, pricing, and layout
+- 🧠 **Model Explainability** through feature engineering and visualization
+- 🤖 **Trained ML Model** served via Flask + `joblib`
+- 🔁 **Local Server Hosting** (Home-based, secured)
+- 🎨 **Bootstrap-Styled Frontend** with `ReactJS` + `Axios`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Tech Stack
 
-### `npm test`
+| Frontend        | Backend         | ML & Data               | Deployment       |
+| --------------- | --------------- | ----------------------- | ---------------- |
+| ReactJS + Axios | Flask API       | RandomForest, CatBoost  | Home Server      |
+| Bootstrap 5     | Python + Joblib | Pandas, Sklearn, Optuna | React Dev Server |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧪 Example User Input
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "area": 154,
+  "rooms": 3,
+  "baths": 2,
+  "region": "القاهرة",
+  "locality": "مدينة المستقبل",
+  "type": "تاون هاوس",
+  "is_new": 1
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📈 ML Model Info
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Trained on real estate listings scraped from Bayut Egypt
+2. Predicts price using engineered features like:
+3. Area, Rooms, Baths
+4. Is New, Type, Locality
+5. Custom spatial statistics
+6. Enhanced via feature engineering: mean/std-based enrichments
+7. Validation using R², RMSE, MAE
 
-### `npm run eject`
+## 📍 Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ✅ User accounts and login
+- 📥 Export listings to PDF/CSV
+- 📍 Landmark distance features
+- 🌍 Google Maps Embed
+- 🧠 Model interpretability dashboard (SHAP/ELI5)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📜 License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**_This project is built by Mohamed Gad and released for educational and non-commercial use._**
+**_Built to democratize real estate intelligence through AI and market transparency._**
