@@ -43,7 +43,7 @@ function App() {
     setLoading(true);
     try {
          const res = await axios.post(
-        `${process.env.REACT_APP_PYTHON_CODE}/predict`,
+        `${process.env.REACT_APP_PYTHON_CODE}/predictegy`,
         payload
       );
       setResponse(res.data);
